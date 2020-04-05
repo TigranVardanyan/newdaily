@@ -1,3 +1,6 @@
+html {
+  overflow: hidden; }
+
 body {
   margin: 0;
   padding: 0;
@@ -8,9 +11,10 @@ body {
   transition: all 0.5s ease; }
   body .wrapper {
     display: grid;
-    grid-template-columns: 44% 44% 44% 44% 44%;
-    grid-template-rows: 44% 44% 44% 44% 44%;
-    grid-gap: 0; }
+    grid-template-columns: 28vw 28vw 28vw 28vw 28vw;
+    grid-template-rows: 28vh 28vh 28vh 28vh 28vh;
+    grid-gap: 0;
+    font-size: 160px; }
     body .wrapper div.about {
       background-color: aliceblue; }
     body .wrapper div.bower {

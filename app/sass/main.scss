@@ -1,21 +1,22 @@
 :root {
 
 }
-//html {
-//  overflow: hidden;
-//}
+html {
+  overflow: hidden;
+}
 body {
   margin: 0;
   padding: 0;
-
   perspective: 100px;
   transition: all 0.5s ease;
   .wrapper {
     display: grid;
-    grid-template-columns: 44% 44% 44% 44% 44%;
-    grid-template-rows:  44% 44% 44% 44% 44%;
+    grid-template-columns: 28vw 28vw 28vw 28vw 28vw;
+    grid-template-rows:  28vh 28vh 28vh 28vh 28vh;
     grid-gap: 0;
+    font-size: 160px;
     div {
+
       &.about {
         background-color: aliceblue;
       }

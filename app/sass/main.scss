@@ -1,0 +1,55 @@
+:root {
+
+}
+//html {
+//  overflow: hidden;
+//}
+body {
+  margin: 0;
+  padding: 0;
+
+  perspective: 100px;
+  width: 300px;
+  height: 300px;
+  transition: all 0.5s ease;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw;
+    grid-template-rows: 100vh 100vh 100vh;
+    grid-gap: 0;
+    div {
+      width: 100vw;
+      height: 100vh;
+      &.about {
+        background-color: aliceblue;
+      }
+      &.bower {
+        background-color: darkgreen;
+      }
+      &.contact {
+        background-color: crimson;
+      }
+      &.extra {
+        background-color: chocolate;
+      }
+      &.main {
+        background-color: chartreuse;
+      }
+      &.portfolio {
+        background-color: brown;
+      }
+      &.service {
+        background-color: blueviolet;
+      }
+      &.stub1 {
+        background-color: blue;
+      }
+      &.stub2 {
+        background-color: aqua;
+      }
+      iframe {
+        overflow: hidden;
+      }
+    }
+  }
+}

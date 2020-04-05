@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-perspective: 100px;
+          perspective: 100px;
+  width: 300px;
+  height: 300px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
+  body .wrapper {
+    display: grid;
+    grid-template-columns: 100vw 100vw 100vw;
+    grid-template-rows: 100vh 100vh 100vh;
+    grid-gap: 0; }
+    body .wrapper div {
+      width: 100vw;
+      height: 100vh; }
+      body .wrapper div.about {
+        background-color: aliceblue; }
+      body .wrapper div.bower {
+        background-color: darkgreen; }
+      body .wrapper div.contact {
+        background-color: crimson; }
+      body .wrapper div.extra {
+        background-color: chocolate; }
+      body .wrapper div.main {
+        background-color: chartreuse; }
+      body .wrapper div.portfolio {
+        background-color: brown; }
+      body .wrapper div.service {
+        background-color: blueviolet; }
+      body .wrapper div.stub1 {
+        background-color: blue; }
+      body .wrapper div.stub2 {
+        background-color: aqua; }
+      body .wrapper div iframe {
+        overflow: hidden; }

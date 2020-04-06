@@ -63,3 +63,8 @@ window.addEventListener("wheel", function(e) {
   }
   console.log(scrollSizeX)
 });
+
+let div = document.querySelectorAll(".wrapper div");
+for(let i = 0; i < div.length; i++){
+  div[i].style.order = i;
+}

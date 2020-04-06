@@ -10,28 +10,48 @@ body {
   -o-transition: all 0.5s ease;
   transition: all 0.5s ease; }
   body .wrapper {
-    display: grid;
-    grid-template-columns: 28vw 28vw 28vw 28vw 28vw;
-    grid-template-rows: 28vh 28vh 28vh 28vh 28vh;
-    grid-gap: 0;
-    font-size: 160px; }
-    body .wrapper div.about {
-      background-color: aliceblue; }
-    body .wrapper div.bower {
-      background-color: darkgreen; }
-    body .wrapper div.contact {
-      background-color: crimson; }
-    body .wrapper div.extra {
-      background-color: chocolate; }
-    body .wrapper div.main {
-      background-color: chartreuse; }
-    body .wrapper div.portfolio {
-      background-color: brown; }
-    body .wrapper div.service {
-      background-color: blueviolet; }
-    body .wrapper div.stub1 {
-      background-color: blue; }
-    body .wrapper div.stub2 {
-      background-color: aqua; }
-    body .wrapper div iframe {
-      overflow: hidden; }
+    -webkit-perspective: 900px;
+            perspective: 900px; }
+    body .wrapper #cube {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      -webkit-transform-origin: 50% 50% -150px;
+          -ms-transform-origin: 50% 50% -150px;
+              transform-origin: 50% 50% -150px;
+      -webkit-transform: rotate3d(1, 1, 1, 50deg);
+              transform: rotate3d(1, 1, 1, 50deg);
+      -webkit-transform-style: preserve-3d;
+              transform-style: preserve-3d; }
+      body .wrapper #cube .brink {
+        width: 300px;
+        height: 300px;
+        background-color: rgba(0, 0, 0, 0.3);
+        position: absolute;
+        border: 10px solid #fff;
+        border-radius: 10px;
+        font-size: 5em;
+        color: #fff;
+        line-height: 300px;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+        -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+                box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+        -webkit-transform-origin: 50% 50% -150px;
+            -ms-transform-origin: 50% 50% -150px;
+                transform-origin: 50% 50% -150px; }
+      body .wrapper #cube .brink2 {
+        -webkit-transform: rotateY(90deg);
+                transform: rotateY(90deg); }
+      body .wrapper #cube .brink3 {
+        -webkit-transform: rotateY(-90deg);
+                transform: rotateY(-90deg); }
+      body .wrapper #cube .brink4 {
+        -webkit-transform: rotateX(90deg);
+                transform: rotateX(90deg); }
+      body .wrapper #cube .brink5 {
+        -webkit-transform: rotateX(-90deg);
+                transform: rotateX(-90deg); }
+      body .wrapper #cube .brink6 {
+        -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg); }

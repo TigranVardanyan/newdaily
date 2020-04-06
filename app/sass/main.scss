@@ -10,42 +10,43 @@ body {
   perspective: 100px;
   transition: all 0.5s ease;
   .wrapper {
-    display: grid;
-    grid-template-columns: 28vw 28vw 28vw 28vw 28vw;
-    grid-template-rows:  28vh 28vh 28vh 28vh 28vh;
-    grid-gap: 0;
-    font-size: 160px;
-    div {
-
-      &.about {
-        background-color: aliceblue;
+    perspective: 900px;
+    #cube {
+      position: relative;
+      width: 300px;
+      height: 300px;
+      transform-origin: 50% 50% -150px;
+      transform: rotate3d(1,1,1,50deg);
+      transform-style: preserve-3d;
+      .brink {
+        width: 300px;
+        height: 300px;
+        background-color: rgba(0,0,0,0.3);
+        position: absolute;
+        border: 10px solid #fff;
+        border-radius: 10px;
+        font-size: 5em;
+        color: #fff;
+        line-height: 300px;
+        text-align: center;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+        box-shadow: 0 0 6px rgba(0,0,0,0.5);
+        transform-origin: 50% 50% -150px;
       }
-      &.bower {
-        background-color: darkgreen;
+      .brink2 {
+        transform: rotateY(90deg);
       }
-      &.contact {
-        background-color: crimson;
+      .brink3 {
+        transform: rotateY(-90deg);
       }
-      &.extra {
-        background-color: chocolate;
+      .brink4 {
+        transform: rotateX(90deg);
       }
-      &.main {
-        background-color: chartreuse;
+      .brink5 {
+        transform: rotateX(-90deg);
       }
-      &.portfolio {
-        background-color: brown;
-      }
-      &.service {
-        background-color: blueviolet;
-      }
-      &.stub1 {
-        background-color: blue;
-      }
-      &.stub2 {
-        background-color: aqua;
-      }
-      iframe {
-        overflow: hidden;
+      .brink6 {
+        transform: rotateY(180deg);
       }
     }
   }
